@@ -1,0 +1,5 @@
+category: Graphics Comm
+requires: cygwin
+sdesc: "Console fax program"
+ldesc: "efax is a small ANSI C/POSIX program that sends and receives 
+faxes using any fax modem (Class 1, 2 or 2.0)."

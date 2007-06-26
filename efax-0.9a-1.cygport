@@ -1,0 +1,16 @@
+DESCRIPTION=
+HOMEPAGE="http://www.cce.com/efax/"
+SRC_URI="http://www.cce.com/efax/download/${P}-001114.tar.gz"
+SRC_DIR="${P}-001114"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake CFLAGS="${CFLAGS} ${CPPFLAGS}"
+}
+
+src_install() {
+	cd ${B}
+	dodir /usr/bin /usr/share/man/man1
+	cyginstall BINDIR=${D}/usr/bin MANDIR=${D}/usr/share/man
+}

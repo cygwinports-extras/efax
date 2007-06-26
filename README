@@ -1,0 +1,58 @@
+efax
+------------------------------------------
+efax is a small ANSI C/POSIX program that sends and receives faxes 
+using any fax modem (Class 1, 2 or 2.0).
+
+Runtime requirements:
+  cygwin-1.5.24-1
+
+Build requirements:
+  cygwin-1.5.24-1
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://www.cce.com/efax/
+
+Canonical download:
+  http://www.cce.com/efax/download/
+
+-------------------------------------------
+
+Build instructions:
+  unpack efax-0.9a-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./efax-0.9a-X.cygport all
+
+This will create:
+  /usr/src/efax-0.9a-X-src.tar.bz2
+  /usr/src/efax-0.9a-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/efax.exe
+  /usr/bin/efix.exe
+  /usr/bin/fax
+  /usr/share/doc/Cygwin/efax-0.9a.README
+  /usr/share/doc/efax-0.9a/COPYING
+  /usr/share/doc/efax-0.9a/README
+  /usr/share/man/man1/efax.1.gz
+  /usr/share/man/man1/efix.1.gz
+  /usr/share/man/man1/fax.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.9a-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
